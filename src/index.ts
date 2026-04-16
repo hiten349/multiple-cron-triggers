@@ -2,7 +2,7 @@
 var index_default = {
   async scheduled(controller, env, ctx) {
     switch (controller.cron) {
-      case "*/3 * * * *":
+      case "* * * * *":
         await updateAPI();
         break;
       case "*/10 * * * *":
