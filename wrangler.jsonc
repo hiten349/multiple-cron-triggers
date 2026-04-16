@@ -8,8 +8,14 @@
 	"main": "src/index.ts",
 	"compatibility_date": "2025-04-03",
 	"observability": {
-		"enabled": true
-	},
+	    "logs": {
+	      "enabled": true,
+	      "invocation_logs": true
+	    },
+	    "traces": {
+	      "enabled": false
+	    }
+	  }
 	"triggers": {
 		"crons": ["* * * * *", "*/10 * * * *", "*/45 * * * *"]
 	},
