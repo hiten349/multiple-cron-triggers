@@ -10,6 +10,9 @@
 	"observability": {
 		"enabled": true
 	}
+	"triggers": {
+		"crons": ["*/3 * * * *", "*/10 * * * *", "*/45 * * * *"]
+	},
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
