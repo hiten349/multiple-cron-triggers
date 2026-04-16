@@ -9,7 +9,7 @@
 	"compatibility_date": "2025-04-03",
 	"observability": {
 		"enabled": true
-	}
+	},
 	"triggers": {
 		"crons": ["*/3 * * * *", "*/10 * * * *", "*/45 * * * *"]
 	},
