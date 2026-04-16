@@ -1,25 +1,30 @@
-interface Env {}
-export default {
-	async scheduled(
-		controller: ScheduledController,
-		env: Env,
-		ctx: ExecutionContext,
-	) {
-		// Write code for updating your API
-		switch (controller.cron) {
-			case "*/3 * * * *":
-				// Every three minutes
-				await updateAPI();
-				break;
-			case "*/10 * * * *":
-				// Every ten minutes
-				await updateAPI2();
-				break;
-			case "*/45 * * * *":
-				// Every forty-five minutes
-				await updateAPI3();
-				break;
-		}
-		console.log("cron processed");
-	},
+// src/index.ts
+var index_default = {
+  async scheduled(controller, env, ctx) {
+    switch (controller.cron) {
+      case "*/3 * * * *":
+        await updateAPI();
+        break;
+      case "*/10 * * * *":
+        await updateAPI2();
+        break;
+      case "*/45 * * * *":
+        await updateAPI3();
+        break;
+    }
+    console.log("cron processed");
+  }
 };
+function updateAPI() {
+  console.log("updateAPI 1");
+}
+function updateAPI2() {
+  console.log("updateAPI 2");
+}
+function updateAPI3() {
+  console.log("updateAPI 3");
+}
+export {
+  index_default as default
+};
+//# sourceMappingURL=index.js.map
