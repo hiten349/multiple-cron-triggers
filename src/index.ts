@@ -16,7 +16,7 @@ var index_default = {
   }
 };
 function updateAPI() {
-  console.log("updateAPI 1");
+  console.log("1 cron is executed");
 }
 function updateAPI2() {
   console.log("updateAPI 2");
